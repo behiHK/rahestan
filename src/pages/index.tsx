@@ -9,7 +9,7 @@ import Projects from "../components/Projects"
 const IndexPage: React.FC<PageProps> = ({location}) => {
   return (
     <Layout location={location}>
-      <div className="bg-no-repeat bg-cover bg-[url('../images/construction.jpg')] bg-fixed">
+      <div className="bg-no-repeat bg-cover bg-[url('../images/road4.jpg')] bg-fixed">
         <Header/>
         <Introduction/>
         <Projects />
@@ -21,4 +21,5 @@ const IndexPage: React.FC<PageProps> = ({location}) => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>راهسازی رهستان</title>
+export const Head: HeadFC = () => 
+<title>شرکت فنی و مهندسی رهستان</title>

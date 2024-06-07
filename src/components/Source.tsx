@@ -6,7 +6,7 @@ import workers from '../images/workers2.jpg'
 const Source = () => {
    return (
     <>
-      <div className="flex flex-wrap flex-col lg:flex-row-reverse justify-items-stretch x-full text-white text-right lg:h-[50vh] bg-white leading-loose">
+      <div className="flex flex-wrap flex-col lg:flex-row-reverse justify-items-stretch x-full text-white text-right lg:h-[60vh] bg-white leading-loose">
             <img src={machine} className='h-full w-full lg:w-1/2' />
             <div className='w-full lg:w-1/2 h-auto lg:h-full px-2 lg:px-40 py-6 bg-gray-500 text-white'>
                 <p className='text-2xl py-4'>ماشین آلات و تجهیزات</p>
@@ -15,7 +15,7 @@ const Source = () => {
                 </p>
             </div>
        </div>
-       <div className="flex flex-col lg:flex-row justify-items-stretch x-full text-right lg:h-[50vh] bg-white leading-loose">
+       <div className="flex flex-col lg:flex-row justify-items-stretch x-full text-right lg:h-[60vh] bg-white leading-loose">
             <img src={workers} className='h-full w-full lg:w-1/2' />
             <div className='w-full lg:w-1/2 h-auto lg:h-full px-2 lg:px-40 py-6 bg-white text-gray-500'>
                 <p className='text-2xl py-4'>مدیریت و نیروی انسانی</p>

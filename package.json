@@ -12,12 +12,13 @@
     "start": "gatsby develop -H 192.168.1.25",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
+    "clean": "gatsby clean --verbose",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "autoprefixer": "^10.4.19",
     "gatsby": "^5.13.3",
+    "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-postcss": "^6.13.1",
     "postcss": "^8.4.38",
     "react": "^18.2.0",
@@ -30,6 +31,7 @@
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
+    "gatsby-plugin-typescript": "^5.13.1",
     "typescript": "^5.3.3"
   }
 }

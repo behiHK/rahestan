@@ -3,9 +3,9 @@ import React from 'react'
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import ProjectCard from './ProjectCard';
-import BuildingImage from "../images/office1.jpg"
-import RoadImage from "../images/road3.jpg"
-import IndustryImage from "../images/asphalt.jpg"
+import BuildingImage from "../images/building.jpg"
+import RoadImage from "../images/road.jpeg"
+import IndustryImage from "../images/asphalt.jpeg"
 import ImageSlider from './Slider';
 
 const Projects = () => {
@@ -18,27 +18,29 @@ const Projects = () => {
         backgroundSize: 'cover',
         height: '70vh',
       }
-    const slideImages = [
-        {
-          url: 'https://www.nps.gov/articles/images/IMG_2588.jpg',
-          caption: 'پروژه سازمان حج و زیارت تهران'
-        },
-        {
-          url: 'https://mn.gov/admin/assets/Admin4000k--8SM_tcm36-484850.jpg',
-          caption: 'پروژه مجتمع اقامتی رفاهی میلاد جم'
-        },
-        {
-          url: 'https://voiceofoc.org/wp-content/uploads/2021/01/AsphaltFactory.2021.01-EDIT-12.jpg',
-          caption: 'پروژه کارخانه آسفالت قشم'
-        },
-      ]; 
+    // const slideImages = [
+    //     {
+    //       url: 'https://www.nps.gov/articles/images/IMG_2588.jpg',
+    //       caption: 'پروژه سازمان حج و زیارت تهران'
+    //     },
+    //     {
+    //       url: 'https://mn.gov/admin/assets/Admin4000k--8SM_tcm36-484850.jpg',
+    //       caption: 'پروژه مجتمع اقامتی رفاهی میلاد جم'
+    //     },
+    //     {
+    //       url: 'https://voiceofoc.org/wp-content/uploads/2021/01/AsphaltFactory.2021.01-EDIT-12.jpg',
+    //       caption: 'پروژه کارخانه آسفالت قشم'
+    //     },
+    //   ]; 
 
    return (
     // bg-gray-500 
     <div className='bg-white w-full '>
         <p className='text-2xl lg:text-3xl text-gray-500 text-right pr-10 pt-10'>پروژه های انجام شده</p>
-        <p className='text-l lg:text-xl text-gray-500 text-right px-10 leading-4 py-10'>
-        شرکت فنی مهندسی رهستان یک پیمانکار خدمات کامل و پیشرو در صنعت است که با افراد، تخصص و توان مالی برای اجرای و تحویل پروژه های بزرگ و کوچک با موفقیت انجام می شود. ما شهرت خود را به عنوان یکی از مجرب ترین و با کیفیت ترین پیمانکاران در ایران با بیش از ۲۰ سال خدمات در صنعت ساخت و ساز عمرانی به دست آورده ایم
+        <p className='text-l leading-loose lg:text-xl lg:leading-loose text-gray-500 text-right px-20 py-10'>
+        ما در شرکت رهستان با سابقه‌ای درخشان در زمینه‌های راهسازی و ساختمان‌سازی، مفتخریم که پروژه‌های متعددی را با موفقیت به اتمام رسانده‌ایم. تخصص و تجربه تیم مجرب ما در کنار تعهد به کیفیت و ایمنی، پشتوانه محکمی برای ارائه خدمات متنوع به شماست.
+        <br/>
+        از جمله پروژه‌های شاخص ما می‌توان به قطعه دوم و سوم بزرگراه خلیج فارس اشاره کرد که علی رغم انتظارات ۳۶ ماه زمان مورد نیاز، پروژه با ایده‌آل‌ترین کیفیت در زمان ۲۴ ماه به اتمام رسید.
         </p>
         <div className='flex flex-col lg:flex-row '>
       {/* <div className='w-full bg-white py-10 mx-2'> 
@@ -54,9 +56,9 @@ const Projects = () => {
         </Slide>
        </div> */}
 
-      <ProjectCard img={BuildingImage} caption='ساخت بیش از ۲۰ ساختمان اداری' title= "ساختمان سازی"  />
-      <ProjectCard img ={RoadImage} caption= 'ساخت بیش از ۱۰۰۰ کیلومتر از راههای کشور' title= "راهسازی" />
-      <ProjectCard img={IndustryImage} title='صنعت' caption= 'اجرای تاسیسات و کارخانجات' />
+      <ProjectCard img={IndustryImage} title='صنعت' caption= 'اجرای تاسیسات و کارخانجات' link={"/industry-projects"} />
+      <ProjectCard img ={RoadImage} caption= 'احداث جاده و بزرگراه' title= "راهسازی" link={"/roadway-projects"} />
+      <ProjectCard img={BuildingImage} caption='ساخت ساختمان های اداری و اقامتی' title= "ساختمان سازی" link={"/building-projects"} />
        </div>
        {/* <ImageSlider images={
         [
