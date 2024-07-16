@@ -32,13 +32,14 @@ import image30 from "../images/sistan3.jpg"
 import image31 from "../images/sistan4.jpg"
 import image32 from "../images/sistan5.jpg"
 import image33 from "../images/sistan6.jpg"
+import { useIntl } from 'gatsby-plugin-intl'
 
 const RoadwayProjects = () => {
-
+    const intl = useIntl()
    return (
-    <div className='bg-white w-full py-10'>
-        <p className='text-2xl lg:text-3xl text-gray-500 text-right pr-10 py-10'> قطعه دوم بزرگراه خلیج فارس </p>
-        <div className='flex flex-col md:grid md:gap-0 md:grid-cols-3 md:grid-rows-4 md:gap-0 place-items-stretch'>
+    <div className={`bg-white w-full ${intl.locale === "fa" ? "text-right rtl" : "text-left ltr"}`}>
+        <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({id: "KhalijFarsProject2"})} </p>
+        <div className='flex flex-col md:grid md:gap-2 md:grid-cols-3 md:grid-rows-4  place-items-stretch'>
             <img src={image1} className='col-start-1 row-span-2'/>
             <img src={image2} className='col-start-2'/>
             <img src={image6} className='col-start-3'/>
@@ -49,8 +50,8 @@ const RoadwayProjects = () => {
             <img src={image5} className='col-start-3'/>
             <img src={image9} className='col-start-1'/>
         </div>
-        <p className='text-2xl lg:text-3xl text-gray-500 text-right pr-10 py-10'> قطعه سوم بزرگراه خلیج فارس </p>
-        <div className='flex flex-col md:grid md:gap-0 md:grid-cols-3 md:grid-rows-1 gap-0 place-items-stretch'>
+        <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({id: "KhalijFarsProject3"})} </p>
+        <div className='flex flex-col md:grid md:gap-2 md:grid-cols-3 md:grid-rows-1 gap-0 place-items-stretch'>
         <img src={image10} className='col-start-1 row-span-2'/>
             <img src={image11} className='col-start-2'/>
             <img src={image12} className='col-start-3'/>
@@ -61,17 +62,17 @@ const RoadwayProjects = () => {
             <img src={image17} className='col-start-3'/>
         </div>
 
-        <p className='text-2xl lg:text-3xl text-gray-500 text-right pr-10 py-10'> جاده دسترسی به منابع آب</p>
-        <div className='flex flex-col md:grid md:gap-0 md:grid-cols-3 md:grid-rows-2 gap-0 place-items-stretch'>
+        {/* <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> جاده دسترسی به منابع آب</p>
+        <div className='flex flex-col md:grid md:gap-2 md:grid-cols-3 md:grid-rows-2 gap-0 place-items-stretch'>
             <img src={image18} className='col-start-1'/>
             <img src={image20} className='col-start-2'/>
             <img src={image21} className='col-start-3'/>
             <img src={image22} className='col-start-1'/>
             <img src={image19} className='col-start-2'/>
-        </div>
+        </div> */}
 
-        <p className='text-2xl lg:text-3xl text-gray-500 text-right pr-10 py-10'> خیابان های سایت سیاحتی قشم</p>
-        <div className='flex flex-col md:grid md:gap-0 md:grid-cols-3 md:grid-rows-2 gap-0 place-items-stretch'>
+        <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({id: "QeshmProject2"})} </p>
+        <div className='flex flex-col md:grid md:gap-2 md:grid-cols-3 md:grid-rows-2 gap-0 place-items-stretch'>
             <img src={image23} className='col-start-1'/>
             <img src={image24} className='col-start-2 row-span-2'/>
             <img src={image25} className='col-start-3'/>
@@ -79,8 +80,8 @@ const RoadwayProjects = () => {
             <img src={image27} className='col-start-3'/>
         </div>
 
-        <p className='text-2xl lg:text-3xl text-gray-500 text-right pr-10 py-10'> بلوار حافظ - سیستان - ساحل جنوبی</p>
-        <div className='flex flex-col md:grid md:gap-0 md:grid-cols-3 md:grid-rows-2 gap-0 place-items-stretch'>
+        <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({id: "SistanProject"})}</p>
+        <div className='flex flex-col md:grid md:gap-2 md:grid-cols-3 md:grid-rows-2 gap-0 place-items-stretch'>
             <img src={image28} className='col-start-1'/>
             <img src={image29} className='col-start-2'/>
             <img src={image30} className='col-start-3'/>

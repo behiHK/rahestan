@@ -5,21 +5,35 @@ import Header from "../components/Header"
 import Introduction from "../components/Introduction"
 import Source from "../components/Source"
 import Projects from "../components/Projects"
+import { injectIntl, Link, FormattedMessage, useIntl } from "gatsby-plugin-intl"
+import { Helmet } from "react-helmet"
 
 const IndexPage: React.FC<PageProps> = ({location}) => {
+  const intl = useIntl()
   return (
+    <>
+    <Helmet>
+    <title>
+    {intl.formatMessage({id: "companyName"})}|{intl.formatMessage({id: "completeCompanyName"})}
+    </title>
+    </Helmet>
     <Layout location={location}>
-      <div className="bg-no-repeat bg-cover bg-[url('../images/road4.jpg')] bg-fixed">
+      {/* <div className="bg-no-repeat bg-cover bg-[url('../images/road4.jpg')] bg-fixed"> */}
         <Header/>
-        <Introduction/>
-        <Projects />
+        {/* <Introduction/> */}
+        {/* <Projects /> */}
         <Source />
-      </div>
+      {/* </div> */}
     </Layout>
+    </>
   )
 }
 
 export default IndexPage
 
-export const Head: HeadFC = () => 
-<title>شرکت فنی و مهندسی رهستان</title>
+// export const Head: HeadFC = () => {
+//   const intl = useIntl()
+//   return <title>
+//     {intl.formatMessage({id: "companyName"})}|{intl.formatMessage({id: "completeCompanyName"})}
+//     </title>
+// }

@@ -7,4 +7,10 @@
 body {
     font-family: 'Vazirmatn';
     direction: rtl;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.ltr {
+    direction: ltr; 
 }
