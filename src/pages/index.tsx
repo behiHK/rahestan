@@ -7,6 +7,7 @@ import Source from "../components/Source"
 import Projects from "../components/Projects"
 import { injectIntl, Link, FormattedMessage, useIntl } from "gatsby-plugin-intl"
 import { Helmet } from "react-helmet"
+import Client from "../components/Client"
 
 const IndexPage: React.FC<PageProps> = ({location}) => {
   const intl = useIntl()
@@ -23,6 +24,7 @@ const IndexPage: React.FC<PageProps> = ({location}) => {
         {/* <Introduction/> */}
         {/* <Projects /> */}
         <Source />
+        <Client />
       {/* </div> */}
     </Layout>
     </>

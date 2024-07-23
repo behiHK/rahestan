@@ -101,29 +101,28 @@ const Layout = ({children, location}) => {
                 <div className=' min-h-[30vh] flex flex-col justify-center items-start text-right border-solid border-b-2 border-gray-500 py-4 px-10 text-right leading-loose'>
                 {/* <div className='flex flex-row justify-start items-start mb-6 leading-loose'> */}
                     <p>
-                    {intl.formatMessage({id: "address"})}:
+                    {intl.formatMessage({id: "footerOfficeTehran"})}:
                     </p>
                    <div className={`${intl.locale === "fa" ? "text-right rtl" : "text-left ltr"}`}>
-                        <p className='px-6'> {intl.formatMessage({id: "footerOfficeTehran"})}: {intl.formatMessage({id: "footerAddressTehran"})}</p>  
-                        <p className='px-6'> {intl.formatMessage({id: "footerOfficeEsfahan"})}: {intl.formatMessage({id: "footerAddressEsfahan"})}</p>  
+                        <p className='px-6'>  {intl.formatMessage({id: "footerAddressTehran"})}</p>  
+                        <p className='px-6'> {intl.formatMessage({id: "footerPhoneTehran"})}</p> 
+                        
                     {/* </div>                  */}
                     </div>
 
                 {/* <div className='flex flex-row justify-start items-start mb-6'> */}
                     <p>
-                    {intl.formatMessage({id: "phone"})}:
+                    {intl.formatMessage({id: "footerOfficeEsfahan"})}:
                     </p>
                     <div className={`${intl.locale === "fa" ? "text-right rtl" : "text-left ltr"}`}>
-                        <p className='px-6'>{intl.formatMessage({id: "footerOfficeTehran"})}: {intl.formatMessage({id: "footerPhoneTehran"})}</p>  
-                        <p className='px-6'>{intl.formatMessage({id: "footerOfficeEsfahan"})}: {intl.formatMessage({id: "footerPhoneEsfahan"})}</p>  
+                    <p className='px-6'> {intl.formatMessage({id: "footerAddressEsfahan"})}</p>  
+                        <p className='px-6'> {intl.formatMessage({id: "footerPhoneEsfahan"})}</p>  
                     </div>                 
                 {/* </div>           */}
 
-                {/* <div className='flex flex-row justify-start items-start mb-6'> */}
-                    <span >
-                    {intl.formatMessage({id: "email"})}: &nbsp;&nbsp;info@rahestan.com
-                    </span>                   
-                {/* </div> */}
+                    <p >
+                    info@rahestan.com
+                    </p>    
                 </div>
                 <p className={`p-4 m-0 text-center ${intl.locale === "fa" ? "rtl" : "ltr"}`}>{intl.formatMessage({ id: "footerRights"})}</p> 
             </footer>

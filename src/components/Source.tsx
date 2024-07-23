@@ -60,7 +60,11 @@ const Source = () => {
     <div className={intl.locale === "fa"? "rtl" : "ltr"}>
       <div className='w-full  bg-gray-0'>
         {/* <p className='text-2xl lg:text-3xl text-gray-500 text-right pr-10 pt-10'>پروژه های انجام شده</p> */}
-        <p className='text-l leading-loose lg:text-xl lg:leading-loose text-gray-500 text-center px-4 lg:px-40 py-20'>
+        <p className={`text-2xl leading-loose lg:text-3xl lg:leading-loose text-gray-600 ${intl.locale === "fa" ? "text-right rtl" : "text-left ltr"} px-4 lg:px-40 pt-10 pb-5`}>
+          {intl.formatMessage({ id: "projectsSummaryTitle1" })} &nbsp;
+          <span className={`text-xl leading-loose lg:text-2xl lg:leading-loose text-gray-600 ${intl.locale === "fa" ? "text-right rtl" : "text-left ltr"}`}>{intl.formatMessage({ id: "projectsSummaryTitle2" })} </span>
+        </p>
+        <p className={`text-l leading-loose lg:text-xl lg:leading-loose text-gray-500 ${intl.locale === "fa" ? "text-right rtl" : "text-left ltr"} px-4 lg:px-44 pb-20`}>
           {intl.formatMessage({ id: "projectsSummaryPart1" })}
           <br />
           {intl.formatMessage({ id: "projectsSummaryPart2" })}

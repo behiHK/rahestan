@@ -10,7 +10,10 @@
     "projects": "projects",
     "certificates": "certificates",
     "appreciations": "Appreciation Certificates",
-    "projectsSummaryPart1": "At Rahastan Company, we are proud to have successfully completed numerous projects in the construction, oil and gas, water and wastewater, facilities, and steel industries, with over half a century of brilliant history.",
+    "ourClients": "Our Clients", 
+    "projectsSummaryTitle1": "Expertise and commitment",
+    "projectsSummaryTitle2": "50 years with you",
+    "projectsSummaryPart1": "At Rahestan Company, we are proud to have successfully completed numerous projects in the construction, oil and gas, water and wastewater, facilities, and steel industries, with over half a century of brilliant history.",
     "projectsSummaryPart2":"The expertise and experience of our experienced team, along with our commitment to quality and safety, are a strong foundation for providing you with a variety of services.",
     "roadSummary": "Relying on its expertise and experience in road and highway construction, Rahestan has completed numerous projects across the country. These projects include the construction of the second and third sections of the Persian Gulf Highway, which were completed in 24 months, despite initial expectations of 36 months. In our road construction projects, we use the latest methods and technologies to complete them in the shortest possible time while adhering to the highest quality standards.",
     "oilSummary": "As a specialized contractor in the oil and gas industry, Rahestan operates in various fields, including the construction of oil and gas pipelines, the construction of oil and gas facilities, and the construction of gas well sites. Drawing on our knowledge and experience in this industry, we have successfully completed numerous projects, including the construction of the Kangon gas well pipeline and the construction of the Kharفang gas field well site.",
@@ -34,9 +37,9 @@
     "footerRights":"Copyright © 2024, Rahestan, All Rights Reserved.",
     "footerAddressEsfahan": "NO. 17, 9th St., South Sheikh Sadoogh Ave.",
     "footerAddressTehran": "Unit 3, NO. 8, 21st St., Gandi St.",
-    "footerPhoneEsfahan": "+98-031-36687599  +98-031-36693982",
-    "footerPhoneTehran": "+98-021-88799629  +98-021-88792299",
-    "footerOfficeEsfahan": "Esfahan Office",
+    "footerPhoneEsfahan": "+98.3136687599  +98.3136693982",
+    "footerPhoneTehran": "+98.2188799629  +98.2188792299",
+    "footerOfficeEsfahan": "Isfahan Office",
     "footerOfficeTehran": "Tehran Office",
     "QeshmProject1": "Qeshm Asphalt Plant",
     "DamghanProject": "Damghan Lagoon Wastewater Treatment Facility",
@@ -60,5 +63,4 @@
     "emailInvalid": "email is invalid",
     "messageRequired": "message is required",
     "phoneInvalid": "phone is invalid"
-
 }
