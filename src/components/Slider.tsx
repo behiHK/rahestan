@@ -22,18 +22,18 @@ const ImageSlider = ({ images }) => {
       <button onClick={prevSlide} className='p-4 bg-gray-300 hover:bg-gray-400'>
         ❮
       </button>
-        {Array.from({ length }, (_, i) => i * 2).map(slideIndex => (
-          <div key={slideIndex} className={`grid grid-cols-2 gap-4 ${slideIndex / 2 === current ? 'block' : 'hidden'}`}>
-            {/* <img src={images[slideIndex]} alt={`Slide ${slideIndex}`} className='h-full w-full col-start-1' />
+      {Array.from({ length }, (_, i) => i * 2).map(slideIndex => (
+        <div key={slideIndex} className={`grid grid-cols-2 gap-4 ${slideIndex / 2 === current ? 'block' : 'hidden'}`}>
+          {/* <img src={images[slideIndex]} alt={`Slide ${slideIndex}`} className='h-full w-full col-start-1' />
             <img src={images[slideIndex + 1]} alt={`Slide ${slideIndex + 1}`} className='h-full w-full col-start-2' /> */}
-            <div className='col-start-1 h-full'>
-            <ProjectCard img={images[slideIndex].url} title={images[slideIndex].title} caption={images[slideIndex].caption}/>
-            </div>
-            <div className='col-start-2 h-full'>
-            <ProjectCard img={images[slideIndex + 1].url} title={images[slideIndex + 1].title} caption={images[slideIndex + 1].caption}/>
-            </div>
+          <div className='col-start-1 h-full'>
+            <ProjectCard img={images[slideIndex].url} title={images[slideIndex].title} caption={images[slideIndex].caption} link="" />
           </div>
-        ))}
+          <div className='col-start-2 h-full'>
+            <ProjectCard img={images[slideIndex + 1].url} title={images[slideIndex + 1].title} caption={images[slideIndex + 1].caption} link="" />
+          </div>
+        </div>
+      ))}
       <button onClick={nextSlide} className='p-4 bg-gray-300 hover:bg-gray-400'>
         ❯
       </button>

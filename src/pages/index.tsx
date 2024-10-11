@@ -8,25 +8,28 @@ import Projects from "../components/Projects"
 import { injectIntl, Link, FormattedMessage, useIntl } from "gatsby-plugin-intl"
 import { Helmet } from "react-helmet"
 import Client from "../components/Client"
+import Bio from "../components/Bio"
 
-const IndexPage: React.FC<PageProps> = ({location}) => {
+const IndexPage: React.FC<PageProps> = ({ location }) => {
   const intl = useIntl()
   return (
     <>
-    <Helmet>
-    <title>
-    {intl.formatMessage({id: "companyName"})}|{intl.formatMessage({id: "completeCompanyName"})}
-    </title>
-    </Helmet>
-    <Layout location={location}>
-      {/* <div className="bg-no-repeat bg-cover bg-[url('../images/road4.jpg')] bg-fixed"> */}
-        <Header/>
+      <Helmet>
+        <title>
+          {intl.formatMessage({ id: "companyName" })}|{intl.formatMessage({ id: "completeCompanyName" })}
+        </title>
+      </Helmet>
+      <Layout location={location}>
+
+        <Header />
         {/* <Introduction/> */}
         {/* <Projects /> */}
+        <Bio />
         <Source />
         <Client />
+
+      </Layout>
       {/* </div> */}
-    </Layout>
     </>
   )
 }

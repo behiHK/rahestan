@@ -9,8 +9,14 @@ body {
     direction: rtl;
     max-width: 100%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .ltr {
     direction: ltr; 
+}
+
+.__react_modal_image__header {
+    padding: 16px !important;
+    background-color: rgba(0, 0, 0, 0) !important;
 }

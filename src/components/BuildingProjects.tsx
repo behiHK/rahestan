@@ -28,55 +28,55 @@ import { useIntl } from 'gatsby-plugin-intl'
 
 const BuildingProjects = () => {
     const intl = useIntl()
-   return (
-    <div className={`bg-white w-full ${intl.locale === "fa" ? "text-right rtl" : "text-left ltr"}`}>
-        <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({id: "KhalijFarsProject4"})}</p>
-        <div className='flex flex-col md:grid md:gap-2 md:grid-cols-3 md:grid-rows-2 gap-0 place-items-stretch'>
-            <img src={image1} className='col-start-1'/>
-            <img src={image5} className='col-start-2'/>
-            <img src={image2} className='col-start-3'/>
-            <img src={image4} className='col-start-1'/>
-            <img src={image3} className='col-start-2'/>
-        </div>
-        <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({id: "MiladJamProject"})}</p>
-        <div className='flex flex-col md:grid md:gap-2 md:grid-cols-4 md:grid-rows-2 gap-0 place-items-stretch'>
-            <img src={image8} className='col-start-1'/>
-            <img src={image6} className='col-start-2 row-span-2 col-span-2'/>
-            <img src={image7} className='col-start-4'/>
-            <img src={image9} className='col-start-1'/>
-            <img src={image10} className='col-start-4'/>
-        </div>
-        <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'>{intl.formatMessage({id: "KanganProject2"})}</p>
-        <div className='flex flex-col md:grid md:gap-2 md:grid-cols-3 md:grid-rows-4 gap-0 place-items-stretch'>
-            <img src={image14} className='col-start-1 row-span-2'/>
-            <img src={image15} className='col-start-2 row-span-2'/>
-            <img src={image16} className='col-start-3 row-span-2'/>
-            <img src={image17} className='col-start-1 row-span-2'/>
-            <img src={image20} className='col-start-2 row-span-2'/>
-            <img src={image18} className='col-start-3'/>
-            <img src={image19} className='col-start-3'/>
-        </div>
+    return (
+        <div className={`bg-white w-full ${intl.locale === "fa" ? "text-right rtl" : "text-left ltr"}`}>
+            <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({ id: "KhalijFarsProject4" })}</p>
+            <div className='flex flex-col md:grid md:gap-2 md:grid-cols-3 md:grid-rows-2 gap-0 place-items-stretch'>
+                <img src={image1} className='col-start-1' />
+                <img src={image5} className='col-start-2' />
+                <img src={image2} className='col-start-3' />
+                <img src={image4} className='col-start-1' />
+                <img src={image3} className='col-start-2' />
+            </div>
+            <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({ id: "MiladJamProject" })}</p>
+            <div className='flex flex-col md:grid md:gap-2 md:grid-cols-4 md:grid-rows-2 gap-0 place-items-stretch'>
+                <img src={image8} className='col-start-1' />
+                <img src={image6} className='col-start-2 row-span-2 col-span-2' />
+                <img src={image7} className='col-start-4' />
+                <img src={image9} className='col-start-1' />
+                <img src={image10} className='col-start-4' />
+            </div>
+            <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'>{intl.formatMessage({ id: "KanganProject2" })}</p>
+            <div className='flex flex-col md:grid md:gap-2 md:grid-cols-3 md:grid-rows-4 gap-0 place-items-stretch'>
+                <img src={image14} className='col-start-1 row-span-2' />
+                <img src={image15} className='col-start-2 row-span-2' />
+                <img src={image16} className='col-start-3 row-span-2' />
+                <img src={image17} className='col-start-1 row-span-2' />
+                <img src={image20} className='col-start-2 row-span-2' />
+                <img src={image18} className='col-start-3' />
+                <img src={image19} className='col-start-3' />
+            </div>
 
-        <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({id: "SabaProject"})}</p>
-        <div className='flex flex-col md:grid md:gap-2 md:grid-cols-2 md:grid-rows-1 gap-0 place-items-stretch'>
-            <img src={image21} className='col-start-1'/>
-            <img src={image22} className='col-start-2'/>
-        </div>
+            <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({ id: "SabaProject" })}</p>
+            <div className='flex flex-col md:grid md:gap-2 md:grid-cols-2 md:grid-rows-1 gap-0 place-items-stretch'>
+                <img src={image21} className='col-start-1' />
+                <img src={image22} className='col-start-2' />
+            </div>
 
-        <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({id: "TehranProject"})}</p>
-        <div className='flex flex-col md:grid md:gap-2 md:grid-cols-3 md:grid-rows-1 gap-0 place-items-stretch'>
-            <img src={image11} className='col-start-1'/>
-            <img src={image12} className='col-start-2'/>
-            <img src={image13} className='col-start-3'/>
-        </div>
+            <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({ id: "TehranProject" })}</p>
+            <div className='flex flex-col md:grid md:gap-2 md:grid-cols-3 md:grid-rows-1 gap-0 place-items-stretch'>
+                <img src={image11} className='col-start-1' />
+                <img src={image12} className='col-start-2' />
+                <img src={image13} className='col-start-3' />
+            </div>
 
-        <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({id: "MobarakeProject"})}</p>
-        <div className='flex flex-col md:grid md:gap-2 md:grid-cols-2 md:grid-rows-1 gap-0 place-items-stretch'>
-            <img src={image23} className='col-start-1'/>
-            <img src={image24} className='col-start-2'/>
+            <p className='text-2xl lg:text-3xl text-gray-500 px-5 py-5 lg:px-10 lg:py-10'> {intl.formatMessage({ id: "MobarakeProject" })}</p>
+            <div className='flex flex-col md:grid md:gap-2 md:grid-cols-2 md:grid-rows-1 gap-0 place-items-stretch'>
+                <img src={image23} className='col-start-1' />
+                <img src={image24} className='col-start-2' />
+            </div>
         </div>
-    </div>
-   )
+    )
 }
 
 export default BuildingProjects

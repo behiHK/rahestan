@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 const pageStyles = {
   color: "#232129",
   padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  fontFamily: "Open Sans, Roboto, sans-serif, serif",
 }
 const headingStyles = {
   marginTop: 0,
@@ -24,13 +24,13 @@ const codeStyles = {
   borderRadius: 4,
 }
 
-const NotFoundPage: React.FC<PageProps> = ({location}) => {
+const NotFoundPage: React.FC<PageProps> = ({ location }) => {
   return (
- <Layout location={location}>
-  <div className="h-[70vh]">
-      NOT FOUND
-    </div>
- </Layout>
+    <Layout location={location}>
+      <div className="h-[70vh]">
+        NOT FOUND
+      </div>
+    </Layout>
   )
 }
 
